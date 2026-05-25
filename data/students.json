@@ -74,7 +74,28 @@
                     "instructor": "Mr. Daniel Uy"
                 }
             ]
+        },
+        {
+            "student_id": "2026-0004",
+            "first_name": "Miguel",
+            "last_name": "Garcia",
+            "program": "BS Information Technology",
+            "year_level": 4,
+            "email": "miguel.garcia@example.com",
+            "courses": [
+                {
+                    "course_code": "CAP401",
+                    "course_title": "Capstone Project 1",
+                    "units": 3,
+                    "instructor": "Dr. Roberto Mendoza"
+                },
+                {
+                    "course_code": "CYB402",
+                    "course_title": "Cybersecurity Operations",
+                    "units": 3,
+                    "instructor": "Mr. Jerry Canale"
+                }
+            ]
         }
     ]
 }
-    
