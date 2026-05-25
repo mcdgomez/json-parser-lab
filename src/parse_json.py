@@ -70,6 +70,31 @@ def display_students(data):
             )
 
 
+def display_statistics(students):
+    """
+    Displays a summary report with total students, courses, and average units.
+    """
+    total_students = len(students)
+    total_courses = 0
+    total_units = 0
+
+    for student in students:
+        total_courses += len(student['courses'])
+        student_units = calculate_total_units(student['courses'])
+        total_units += student_units
+
+    average_units = total_units / total_students
+
+    print()
+    print("=" * 60)
+    print("SUMMARY REPORT")
+    print("=" * 60)
+    print(f"Total Students: {total_students}")
+    print(f"Total Courses Enrolled: {total_courses}")
+    print(f"Average Units Per Student: {average_units:.2f}")
+    print("=" * 60)
+
+
 def main():
     """
     Main program function.
@@ -80,6 +105,7 @@ def main():
     if data is not None:
         display_school_info(data)
         display_students(data)
+        display_statistics(data['students'])
 
 
 if __name__ == "__main__":
